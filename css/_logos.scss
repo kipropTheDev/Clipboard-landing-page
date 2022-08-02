@@ -1,0 +1,35 @@
+.logos{
+    text-align: center;
+    margin-bottom: 100px;
+
+    
+
+    &__partners{
+
+        @include breakpoint-up(large){
+            padding-top: 2rem;
+            margin: 0 150px;
+        }
+
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .partner{
+            padding-bottom: 40px;
+
+            
+
+            img{                
+                width: 40%;
+
+                @include breakpoint-up(large){
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+
+}

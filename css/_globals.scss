@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+//***************Global Classes************
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    //font-size: 18px;
+    font-family: Bai Jamjuree;
+    
+}
+
+//container class goes on most sections
+.container{
+    padding: 0 16px;
+    margin-bottom: 120px;
+
+    //increase the padding on tablet mode
+    @include breakpoint-up(medium){        
+        padding: 0 100px;
+        margin-bottom: 80px;       
+    }
+    
+    //increase padding further on 
+    @include breakpoint-up(large){        
+        padding: 0 300px;        
+        margin-bottom: 60px;   
+    }
+}
+
+//make a specialized container for some classes
+.special_container{
+    padding: 0 16px;
+    margin-bottom: 120px;
+
+    //increase the padding on tablet mode
+    @include breakpoint-up(medium){        
+        padding: 0 100px;
+        margin-bottom: 80px;       
+    }
+    
+    //increase padding further on 
+    @include breakpoint-up(large){        
+        padding: 0 0;
+        margin-bottom: 60px;   
+    }
+}
+
+.button{
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &.ios-cta{
+        background-color: $strongCyan;
+        //border-bottom: 2px solid $strongCyan;
+        box-shadow: 0px 3px 3px rgba($strongCyan, 0.5);
+        @include breakpoint-up(medium){
+            margin-right: 6px;
+        }
+
+        &:hover{
+            transform: scale(1.01);
+            background-color: lighten($strongCyan, 3%);
+        }    
+    }
+    
+    &.mac-cta{
+        background-color: $lightBlue;
+        //border-bottom: 2px solid $lightBlue;
+        box-shadow: 0px 3px 3px rgba($lightBlue, 0.5);
+
+        @include breakpoint-up(medium){
+            margin-left: 6px;
+        }
+
+        &:hover{
+            transform: scale(1.01);
+            background-color: lighten($lightBlue, 3%);
+
+        }
+    }
+  
+    @include breakpoint-down(small){
+        width: 100%;
+    }
+
+    @include breakpoint-up(large){
+        padding: 15px 30px 15px 30px;
+    }
+}
+
+
+
+p{
+    color: $GrayishBlue;
+    //text-align: center;
+    // font-size: 17px;
+    line-height: 1.6rem;
+    padding-bottom: 3rem;
+
+    @include breakpoint-up(medium){
+        padding-bottom: 1.5rem;
+        
+        line-height: 1.7;
+    }
+    @include breakpoint-up(large){
+        padding-bottom: 1.5rem;
+        
+        line-height: 1.5;
+    }
+}
+
+
+//p tag font sizes
+.p_large{
+    font-size: 18px;
+}
+
+.p_medium{
+    font-size: 16px;
+}
+
+.p_small{
+    font-size: 14px;
+}
+
+h1{
+    font-size: 32px;
+    color: hsl(210, 10%, 33%);
+    padding-bottom: 2rem;
+    font-weight: 600;
+
+    
+    @include breakpoint-up(medium){
+        padding-bottom: 1rem;
+    }
+    @include breakpoint-up(large){
+        padding-bottom: .5rem;
+        font-size: 36px;
+    }
+}
+
+h2{
+    font-size: 1.6rem;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+h3{
+    color: hsl(210, 10%, 33%);
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+
+

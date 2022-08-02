@@ -1,0 +1,40 @@
+.header{
+    background-image: url(/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    text-align: center;
+    //margin-bottom: 130px;
+
+    @include breakpoint-up(medium){
+        background-image: url(/images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+
+    &__logo{
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        @include breakpoint-up(medium){
+            height: 110px;
+            width: 110px;
+            padding: 0;
+            margin: 5em 0 3em 0;
+        }
+
+        @include breakpoint-up(large){
+            height: 80px;
+            width: 80px;
+            padding: 0;
+            margin: 5em 0 2.5em 0;
+        }
+    }
+
+    
+}
+
+
+
+
