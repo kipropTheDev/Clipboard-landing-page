@@ -1,7 +1,7 @@
 # Frontend Mentor - ClipBoard Landing Page solution
 
 This is a solution to the [ClipBoard Landing Page8 challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9/hub/clipboard-landing-page-DbBCMHHBA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-[Click here to see my solution](https://90834e96.easybank-3qg.pages.dev/).
+[Click here to see my solution](https://clipboard-landing-page3400.netlify.app/).
 
 ### The challenge
 
